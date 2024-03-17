@@ -1,0 +1,99 @@
+Bootstrap
+-------------
+Bootstrap latest version is 5.x.
+
+Bootstrap is the most popular and powerful front-end (Html,CSS,Javascript) framework for faster and easier responsive web development.
+
+Bootstrap gives us the ability to create a flexible and responsive web layouts with much less efforts.
+
+Bootstrap was originally designed by Twitter.
+
+
+Advantages
+--------------------
+It is very easy to use.
+It saves a lot of time.
+Anyone who is having basic knowledge of Html and css can use bootstrap.
+It is used to create responsive websites.
+
+A website is called responsive website, which can automatically adjust itself to look good on all the devices from smartphone to desktops.
+
+we can create with bootstrap like
+--------------------------------------------
+we can create responsive websites
+we can create different types of form layouts
+we can create different types of navigation bars
+we can create different types of modals.
+we can create different types of tooltips
+we can create image slider
+we can create alert boxes.
+
+
+
+to download bootstrap go to the official website
+getbootstrap.com
+
+
+https://getbootstrap.com/
+cdn-content delivery network
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+------------
+Containers
+--------------------
+These are the most basic layout element in bootstrap and are required when using the grid system.
+Containers are used to wrap content with some padding.
+
+Different types of containers
+-----------------------------------------
+.container - which has max-width at each responsive breakpoint.
+
+.container-fluid - which has 100% width at all breakpoints.
+
+
+.container-sm (small)
+.container-md (medium)
+.container-lg (large)
+.container-xl
+.container-xxl
+
+
+<html>
+<head>
+<title>Bootstrap</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+<h1>This is heading1</h1>
+<h2>This is heading2</h2>
+</div>
+
+<div class="container-fluid">
+<h1>This is heading1</h1>
+<h2>This is heading2</h2>
+
+</div>
+<div class="container-sm bg-dark text-white p-5 m-5">
+<h1>This is heading1 small container</h1>
+<h2>This is heading2</h2>
+
+</div>
+<div class="container-md bg-light ">
+<h1>This is heading1 medium container</h1>
+<h2>This is heading2</h2>
+
+</div>
+<div class="container-lg border bg-primary">
+<h1>This is heading1 large container</h1>
+<h2>This is heading2</h2>
+
+</div>
+</body>
+</html>
+

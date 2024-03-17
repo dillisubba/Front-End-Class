@@ -1,0 +1,49 @@
+Breadcrumbs
+----------------------
+It is a navigation scheme which indicates the current page's location to the user within a website or an application.
+
+use the class .breadcrumb on ol
+
+default breadcrumb separator is '/' but we can create our own separator using css.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <style>
+.breadcrumb-item + .breadcrumb-item::before
+{
+content: ">";
+}
+</style> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>breadcrumbs</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ol class=" breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Products</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Customers</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    Orders
+                </li>
+            </ol>
+        </nav>
+    </div>
+</body>
+
+</html>
+-----------------------
+
+Send a message

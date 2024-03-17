@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encapsulation day3</title>
+</head>
+<body>
+    <script>
+        class customer{
+    constructor(){
+        var custname;
+        var due;
+    }
+    setName(custname){
+        this.custname=custname;
+    }
+    getName(){
+        return this.custname;
+    }
+
+    setDue(due){
+        if(due<0||due>100){
+            alert("Invalid")
+        }
+        else{
+            this.due=due;
+        }
+       
+    }
+    getDue(){
+        return this.due;
+    }
+}
+var cus=new customer();
+cus.setName("Kali budi");
+document.write("Customer name is "+ cus.getName());
+
+cus.setDue(30);
+document.write("Due is "+ cus.getDue());
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+    width: 25%;
+    padding:20px
+}
+fieldset{
+    width: 100px;
+}
+.note{
+    border:.5px solid black;
+    padding: 1px;
+}
+
+h1{
+    font-family: arial; 
+    font-weight: bold;
+    color: brown;
+    text-align: center;
+    text-decoration: underline;
+    font-size:small;
+    }
+#fname,#lname,#email,#phone,#date, #address,#city,#state,#dropdown,
+ #password{
+    border-style:solid;
+    border-color: green;
+    border-width:85%;
+    border-radius: 4px;
+    padding: 1px;
+    
+}
+
+button{
+    background-color: green;
+}
+
+.btn{
+    
+    color: white;
+    float:right;
+    border-radius: 1px solid;
+} 
+

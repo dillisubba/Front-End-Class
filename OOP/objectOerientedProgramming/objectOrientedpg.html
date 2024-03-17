@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented</title>
+</head>
+
+<body>
+    <script>
+        //Object Oriented Programming
+
+        class Driver{
+            constructor(dId, dname) {
+                this.dId = dId;
+                this.dname = dname;
+            }
+            display() {
+                document.write("Driver ID is ", this.dId + " " +"Driver name is ", this.dname);
+            }
+        }
+        var drv = new Driver(1048, "Hamal");
+        drv.display();
+
+        document.write('<br>')
+
+        //static method
+        class Performance {
+            static display() {
+                document.write("Static method");
+            }
+            static show() {
+                return "Show Method";
+            }
+        }
+        Performance.display();
+        document.write(Performance.show());
+
+    </script>
+</body>
+
+</html>

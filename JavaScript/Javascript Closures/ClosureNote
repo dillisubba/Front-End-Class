@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Closure</title>
+</head>
+<body>
+<script>
+function displayName(fname)
+{
+var result="Welcome "+fname;
+return result;
+}
+document.write(displayName("srinivas"));
+</script>
+</body>
+</html>
+------------
+Closure
+----------
+Whenever a function is invoked a new scope is created for that call.
+The local variable which is declared inside the function belong to that scope.
+They can only be accessed from that function.
+When the function has finished the execution, the scope is usually destroyed.
+
+
+Closure is a function which has access to the variable from another function 's scope.
+This can be done by creating a function inside a function.
+The outer function does not have access to the inner scope.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Closure</title>
+</head>
+<body>
+<script>
+function displaydata(fname) //outer function
+{
+var result="Welcome "+ fname;
+function showdata() //inner function
+{
+var output=result+ "Hello";
+document.write(output);
+};
+return showdata;
+}
+var finaloutput=displaydata("Srinivas");
+finaloutput();
+
+</script>
+</body>
+</html>
+
+---------------------------

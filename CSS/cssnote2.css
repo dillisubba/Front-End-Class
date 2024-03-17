@@ -1,0 +1,127 @@
+/*Note*/
+css selectors
+---------------------
+These are used to select the content which we want to style.
+
+selectors are a part of css rule set.
+
+1. Element selector
+2. Id selector
+3. Class selector
+4. Universal selector
+5. Grouping selector
+
+
+1. Element selector
+------------------------------
+It selects html element by name.
+
+<html>
+<head>
+<title>CSS</title>
+<style>
+h2{color:pink;}
+</style>
+</head>
+<body>
+<h2>Hello</h2>
+<h2>Welcome</h2>
+</body>
+</html>
+-----------
+2. Id selector
+---------------------
+It selects id attribute of html elements to select a specific element.
+An id is always unique within the page.
+It is written with (#) hash character followed by id of the element.
+
+<html>
+<head>
+<title>CSS</title>
+<style>
+#test1{color:yellow;}
+#test2{color:red;}
+</style>
+</head>
+<body>
+<h2 id="test1">Hello</h2>
+<h2 id=test2>Welcome</h2>
+</body>
+</html>
+-----------------
+
+3. Class selector
+------------------------
+It will select all html elements with a specific class attribute.
+It is used as (.) dot or period character followed by class name.
+
+<html>
+<head>
+<title>CSS</title>
+<style>
+.test2{color:pink;}
+</style>
+</head>
+<body>
+<h2 class="test2">Hello</h2>
+<p class="test2">Welcome</p>
+</body>
+</html>
+------------------
+
+4. Universal Selector
+------------------------------
+It is used as a wild card character.
+It selects all the elements on the page.
+It is represented with (* )
+
+<html>
+<head>
+<title>CSS</title>
+<style>
+*{color:orange;}
+</style>
+</head>
+<body>
+<h2>Hello</h2>
+<p>Welcome</p>
+</body>
+</html>
+-------------------
+Grouping selector
+--------------------------
+It is used to select all the elements which is having same style definitions.
+It should be separated by comma.
+
+<html>
+<head>
+<title>CSS</title>
+<style>
+h2{color:blue;}
+h3{color:blue;}
+h4{color:blue;}
+</style>
+</head>
+<body>
+<h2>Hello</h2>
+<h3>Welcome</h3>
+<h4>Hello World</h4>
+</body>
+</html>
+-------
+
+<html>
+<head>
+<title>CSS</title>
+<style>
+h2,h3,h4{color:blue;}
+
+</style>
+</head>
+<body>
+<h2>Hello</h2>
+<h3>Welcome</h3>
+<h4>Hello World</h4>
+</body>
+</html>
+---------------------------------

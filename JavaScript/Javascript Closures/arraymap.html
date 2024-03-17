@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5 + '<br/>'];
+        document.write(arr[0]);
+        document.write(arr[1]);
+        document.write(arr[2]);
+        document.write(arr[3]);
+        document.write(arr[4]);
+
+        document.write('<br/>' + "Values are: " + '<br/>');
+        for (var i = 0; i < arr.length; i++) {
+            document.write(arr[i] + '<br>')
+        }
+        var result = arr = arr.map(function (rez) {
+            return rez;
+        });
+        document.write(result + '<br>');
+        document.write('<br>');
+        document.write('<br>');
+        document.write('<br>');
+        document.write('<br>');
+        document.write('<br>');
+
+        var arrnumbers = [12, 34, 21, 56, 78];
+        document.writeln(arrnumbers[0]);
+        document.writeln(arrnumbers[1]);
+        document.writeln(arrnumbers[2]);
+        document.writeln(arrnumbers[3]);
+        document.writeln(arrnumbers[4]);
+
+
+        document.write("<br/>" + "values are :" + "<br/>");
+        for (var i = 0; i < arrnumbers.length; i++) {
+            document.write(arrnumbers[i] + "<br/>");
+        }
+
+        document.write("display values using map function" + "<br/>");
+        var result = arrnumbers.map(function (res) {
+            return res;
+        })
+
+        document.write(result + "<br/>");
+
+        var arrray=[2,4,6,8,];
+        document.write("The values are: ");
+        for(var i=1; i<array; i++){
+            document.write(array[i]+"<br>");
+        };
+        document.write("Display values using map function"+ "<br>");
+        var res=array.map(function(res){
+            return res;
+        })
+        document.write(res);
+
+
+    </script>
+</body>
+
+</html>

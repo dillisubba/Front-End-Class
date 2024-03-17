@@ -1,0 +1,18 @@
+
+    h3{
+      color:red;
+     }
+
+
+     h5,p{
+      background-color: lightgrey;
+      color: red;
+  }
+  body{
+    background-image: url(file:///C:/Users/dilli/OneDrive/Pictures/download.png);
+    background-repeat: no-repeat; 
+    /* background-repeat: repeat-x; */
+    /* background-repeat:repeat-y; */
+    background-position:center;
+
+  }

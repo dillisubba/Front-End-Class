@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object oriented day2</title>
+    <script type="javascript/text" src="absencap.js"></script>
+    
+</head>
+<body>
+    <!--<script>
+        class friends//class 
+        {
+            display(){//function. this is not static function.
+                document.write("This is second day of static function."+" ");
+            }
+            static show()//This is static function
+            {
+                document.write("Enjoy learning static"+" ");
+            }
+            static bestFriends(){
+                return "Let's go travel."
+            }
+        }
+        var frd=new friends(); //creating object or instance of a class.
+        //to access the variables or methods of a class
+        frd.display(); //object name.fucntion-calling the function.
+
+        //frd.show();{dont display anything}
+        //static functions must be access using className.functionName
+        friends.show();
+        
+        document.write(friends.bestFriends());//return key word cha nae document.write ma 
+                                              // bracket vitra className.fucntionName
+
+        //static method lai without the object ani non static lai with object.
+    </script>-->
+    <script>
+        class customer{
+    constructor(){
+        var custname;
+        var due;
+    }
+    setName(custname){
+        this.custname=custname;
+    }
+    getName(){
+        return this.custname;
+    }
+
+    setDue(due){
+        this.due=due;
+    }
+    getDue(){
+        return this.due;
+    }
+}
+var cus=new customer();
+cus.setName("Kali budi");
+document.write("Customer name is "+ cus.getName());
+
+cus.setDue(400);
+document.write("Due is "+ cus.getDue());
+    </script>
+</body>
+</html>

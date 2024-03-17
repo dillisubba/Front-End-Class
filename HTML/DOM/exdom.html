@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom class</title>
+    <script type="text/javascript" src="../HTML/dom.js"></script>
+    
+</head>
+<body>
+<form>
+<lable>Select a Gender:</lable>
+<input type="radio" id="gen" name="gender">Male
+<input type="radio" id="gen1" name="gender">Female<br>
+<input type="button" onclick="gend()" value="submit">
+<br>
+
+
+<label>Payment:</label>
+<input type="radio" id="pmt" name="payment">Visa
+<input type="radio" id="pmt1" name="payment">Mastercard
+<input type="radio" id=" pmt2" name="payment">AMEX
+<input type="button" onclick="pay()" value="submit payment">
+</form>
+    <!--<p1 id="exam" class="ple">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et odit nobis libero illo, rerum ad quisquam aliquam asperiores quia omnis, qui nemo maiores dolorum nesciunt veritatis. Voluptatum beatae cupiditate voluptas.
+    </p1><br>
+    <p2 id="exam" class="ple">
+        Bhutan is my country. I love my country and I'm proud of it.
+    </p2>
+    <script>
+        var result=document.getElementById("test");
+         result.style.background="pink";
+
+    function gend(){
+    var result = document.getElementsByName("gender");
+    alert(result.length);//how many radio buttons will show.
+};
+
+
+function pay(){
+    var result=document.getElementsByName("payment").value;
+    alert(result);
+};-->
+<script>
+function pay(){
+    var result= document.getElementsByName("payment").value;
+    alert(result.length);
+};
+
+
+</script>
+    
+</body>
+</html>
+
+
+

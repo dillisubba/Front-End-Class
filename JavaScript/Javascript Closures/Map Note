@@ -1,0 +1,40 @@
+map()
+---------
+It allows us to iterate over an array and modify its elements by using a callback function.
+The callback function will then be executed on each of the array's elements.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Map</title>
+</head>
+<body>
+<script>
+var arrnumbers=[12,34,21,56,78];
+document.writeln(arrnumbers[0]);
+document.writeln(arrnumbers[1]);
+document.writeln(arrnumbers[2]);
+document.writeln(arrnumbers[3]);
+document.writeln(arrnumbers[4]);
+
+
+document.write("<br/>"+"values are :"+"<br/>");
+for(var i=0;i<arrnumbers.length;i++)
+{
+document.write(arrnumbers[i]+"<br/>");
+}
+
+document.write("display values using map function"+"<br/>");
+var result=arrnumbers.map(function(res){
+return res;
+})
+
+document.write(result+"<br/>");
+</script>
+
+</body>
+</html>
+------------------------
+

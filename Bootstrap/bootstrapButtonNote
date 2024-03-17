@@ -1,0 +1,17 @@
+Bootstrap Buttons
+-----------------------------
+Buttons are a part of any application.
+They are used for different purposes.
+
+.btn-default
+.btn-primary
+.btn-success
+.btn-info
+.btn-warning
+.btn-danger
+.btn-secondary
+.btn-dark
+.btn-light
+.btn-link
+
+<button class="btn btn-primary">Primary button</button>

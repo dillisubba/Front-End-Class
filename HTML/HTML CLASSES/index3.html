@@ -1,0 +1,104 @@
+<!--Forms: An Html Forms is a section of document which contains controls like textbox, radio buttons, check boxes, submit buttons
+ forms allows users to enter thedata which generally sent to a web server for processing and storage.
+ when we want to collect some data from the user.
+<form action="server url" method="get|post"></form>
+action - backend script to process data.
+
+method - get and post
+get - used to request data from a specified resource.
+data will be visible in the url to the user.
+
+post - data which is sent to the server with post method is stored in the request body of http.
+data will not be visible in the url to the user.
+
+<input> element is the fundamental form element.
+
+<input type="text">
+<input type="radio">
+<input type="password">
+<input type="checkbox">
+
+form control can have id and name attributes.
+<formcontrolname name="" id="">
+
+id attribute is used to refer the control at client side using client side scripts and css which must be unique.
+
+client side scripts - javascript, vbscript
+
+name attribute is used to refer the control at server side using server side scripts like asp.net, jsp/servlets, php.
+
+Enter user name:
+<input type="text" id="username" name="username">
+
+
+dropdown list
+<select name="" id="">
+<option value="">Name</option>
+</select>
+button
+--------
+<input type="submit" value="submit">
+<input type="reset" value="reset">-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Form</title>
+</head>
+<body>
+  <form>
+     username:
+    <input type="text" id="username" name="username" placeholder="enter username"><br>
+     password:
+    <input type="password" id="password" name="password" placeholder="enter password"><br>
+    Enter Address:
+    <textarea rows="5" cols="20" id="your_address" name="address"></textarea><br>
+
+    <label>Select Gender:</label>
+    <input type="radio" id="gender" name="your_gender">Male
+    <input type="radio" id="gender1" name="your_gender">Female<br>
+
+    <label>Select the card:</label>
+    <input type="radio" id="Spade" name="Card">
+    <label for="Spade">Spade</label>
+    <input type="radio" id="Heart" name="Card">
+    <label for="Heart">Heart</label>
+    <input type="radio" id="Club" name="Card">
+    <label for="Club">Club</label><br>
+
+    <label>Select your Hobbies:</label>
+    <label for="Fishing">Fishing</label>
+    <input type="checkbox" id="Fishing" name="Hobbies">
+    <label for="Racing car">Racing</label>
+    <input type="checkbox" id="Racing" name="Hobbies1">
+    <label for="checkbox">Travelling</label>
+    <input type="checkbox" id="travelling" name="Hobbies2"><br>
+
+    <lable>Select your course:</lable>
+    <select name="course" id="class">
+      <option value="HTML">HTML</option>
+      <option value="Javascript">Javascript</option>
+      <option value="Nursing" selected>Nursing</option>
+    </select><br>
+
+    <label>Countries</label>
+    <select name="countries" id="beautiful" multiple>
+      <option value="Nepal">Nepal</option>
+      <option value="Bhutan">Bhutan</option>
+      <option value="Switzerland">switzerland</option>
+      <option value="USA">USA</option>
+      <option value="Denmark">Denmark</option>
+    </select><br>
+
+
+
+    <button type="submit">login</button><br>
+    <input type="reset" value="reset">
+  </form>
+    
+</body>
+</html>
+

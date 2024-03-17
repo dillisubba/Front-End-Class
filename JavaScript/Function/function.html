@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <script type="text/javascript" src="../JavaScript/function.js"></script>
+    
+</head>
+
+<body>
+    <script>
+        /*const number = parseInt(prompt('Enter an integer: '));
+let i=1;
+for(i=1; i<=10; i++){
+    result =i*number;
+    console.log(`${number} * ${i} = ${result}`);
+}*/
+
+        //Predefined
+        document.write(isNaN('Hello sir!'));
+        document.write('<br>');
+        document.write(parseInt('5'));
+        document.write('<br>');
+        document.write(parseFloat('9.99'));
+        document.write('<br>');
+        document.write(eval(4 * 5));
+        document.write('<br>');
+        document.write('<br>');
+
+
+        //User defined 
+
+        //without parameters
+        function display() {
+            document.write("Welcome to functions.")
+        }
+        display(5);
+        document.write('<br>');
+
+        //with parameters
+        function show(fname) {
+            document.write("welcome to functions " + fname);
+        }
+        show('Dilli');
+
+        document.write('<br>');
+        //two parameters
+        function add(x, y) {
+            return x + y;
+        }
+        document.write(add(5, 6));
+        document.write('<br>');
+
+        function display(fname, lname) {
+            document.write(fname + lname);
+        }
+        display('John', 'Doe');
+
+        document.write('<br>');
+
+
+
+
+    </script>
+
+</body>
+
+</html>

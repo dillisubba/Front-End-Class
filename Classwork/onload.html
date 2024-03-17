@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--On load of the page the span tag should display a welcome message.-->
+<!--On clicking a button a message to be displayed in a span tag stating "You clicked the button"
+<body  onload="display()">-->
+    <button onclick="display()" style="background-color: yellowgreen;">Click here</button>
+    <span id="clk"></span>
+
+   <!--<span id="wc"></span>
+
+    <script>
+        function display(){
+        document.getElementById("wc").innerHTML="<b>Welcome to my page.</b>";//innerhtml converts and display
+        }
+    </script>-->
+    <script>
+        function display(){
+            document.getElementById("clk").innerHTML="You clicked the button."
+        }
+    </script>
+    
+</body>
+</html>

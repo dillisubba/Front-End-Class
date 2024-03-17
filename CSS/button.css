@@ -1,0 +1,15 @@
+.submit{
+    background-color: red;
+    font-size: medium;
+    border:5px green solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin:20px;
+}
+h1{
+    float: right;
+}
+.submit:hover{
+    background-color: green;
+    
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <link rel="stylesheet" href="form.css">
+    <script type="text/javascript" src="../Admission Form/validate.js"></script>
+
+</head>
+
+<body>
+    <fieldset>
+        <div>
+       <div class="note"><h1>Student Registration Form</h1></div>
+        <form action="formReg.html"  name="stdForm" method="post" onsubmit="return validateRegistrationForm()">
+
+            <table border="1px">
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="fname" id="fname" placeholder="Enter your first name"></td>
+                </tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lname" id="lname" placeholder="Enter you last name"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" id="email" placeholder="It should contain @"></td>
+                </tr>
+                <tr>
+                    <td>Mobile:</td>
+                    <td><input type="number" name="phone" id="phone" placeholder="only 10 digits are allowed"></td>
+                </tr>
+
+                <tr>
+                    <td> Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="date" id="date" placeholder="date of birth"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea rows="5" cols="20" id="addr" name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><input type="text" name="city" id="city"></td>
+                </tr>
+
+                <tr>
+                    <td>State:</td>
+                    <td><input type="text" name="state" id="state"></td>
+                </tr>
+                <tr>
+                    <td>Qualification:</td>
+                    <td>
+                        <select id="dd">
+                            <option value="select">Select the qualifications</option>
+                            <option value="">B.Tech</option>
+                            <option value="1">M.Tech</option>
+                            <option value="2">MCA</option>
+                            <option value="3">BCA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Specialization:</td>
+                    <td><input type="checkbox"  id="cs" name="spz">Computer Science<br>
+                        <input type="checkbox"  id="it" name="spz">InformationTechnology<br>
+                        <input type="checkbox"  id="ca" name="spz">Computer Architecture
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" id="password" name="password authentication"></td>
+                </tr>
+     </table>
+           <div class="btn">  
+            <button>Registered</button>
+            </div>
+ </fieldset>
+    </form>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to DOM</title>
+    <script type="text/javascript" src="../HTML/dom.js"></script>
+</head>
+
+<body>
+    <script>
+        function display() {
+            var formName = document.formName.usrname.value;
+            alert(formName);
+            // document.write(formName);
+        };
+        //getElementById example
+        function showdata() {
+            var result = document.getElementById("pword").value;//using DOM element
+            alert(result);       
+        };
+
+        //example for paragraph
+        //var result=document.getElementById("test");
+        // result.style.background="pink";
+  
+     </script>
+        
+
+    </script>
+    <form name="formName">
+        <label>Enter username:</label>
+        <input type="text" id="uname" name="usrname" />
+        <input type="button" onclick="display()" value="Display">
+    </form>
+
+    <!--getElementById example-->
+    <form>
+        <lable>Enter password:</lable>
+        <input type="text" id="pword" name="password">
+        <input type="button" onclick="showdata()" value="show">
+    </form><br/>
+
+    <p1 id="example">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et odit nobis libero illo, rerum ad quisquam aliquam asperiores quia omnis, qui nemo maiores dolorum nesciunt veritatis. Voluptatum beatae cupiditate voluptas.
+    </p1><br>
+    <p2 id="demo">
+        Bhutan is my country. I love my country and I'm proud of it.
+    </p2>
+    <script>
+        // var result=document.getElementById("demo");
+        // result.style.background="orange";
+    </script>
+    
+</body>
+
+</html>

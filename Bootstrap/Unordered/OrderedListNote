@@ -1,0 +1,24 @@
+Lists
+--------
+Unordered lists - Items in which order does not matter.
+Ordered lists - Items in which order matters.
+Definition list - Terms with descriptions.
+
+
+<ul>
+</ul>
+
+<ol>
+</ol>
+
+<dl>
+</dl>
+
+HTML
+Hypertext markup language
+
+
+
+
+class = "list-inline"
+side by side

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textBox</title>
+</head>
+<body><!--Create a page containing a text box whose text should be read and written to a span when the control is exited from the text box.
+-->
+
+    <form>
+        <label>TextBox:</label>
+        <input type="text" id="tb" name="textbox" onblur="show()">
+        <span type="text" id="spn" style="color:red"></span>
+</form>
+    
+   <script>
+    function show(){
+     var txtbox=document.getElementById("tb").value;//
+        document.getElementById("spn").innerHTML=txtbox;
+    }
+    
+   </script>
+</body>
+</html>

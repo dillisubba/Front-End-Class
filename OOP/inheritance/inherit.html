@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritance</title>
+    <script type="text/javascript" src="../OOP/inherit.js"></script>
+   
+</head>
+
+<body>
+    <script>
+       class marks {
+            display() {
+                document.write("Shiva is smart");
+            }
+        }
+        class pos extends marks {
+            show() {
+                document.write("He took the first pos")
+            }
+        }
+
+        var post = new pos();//child object nai use garincha yah tala.
+        post.display();
+        post.show();
+
+    </script>
+
+    
+
+</body>
+
+</html>

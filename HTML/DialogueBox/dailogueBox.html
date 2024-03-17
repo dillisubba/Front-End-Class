@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DialogueBox</title>
+    <script type="text/javascript" src="../DialogueBox/dialogueBox.js"></script>
+
+</head>
+<body onload="display()">
+<input type="button" onclick="display()" value="click here">
+<input type="display" onmouseover="directMe()" value="Congratulations!">
+<input type="button" onmouseout="directMe()" value="Thank You!">
+<input type="btn" onfocus="onFocus()" value="onFocus">
+
+<script>
+    function display(){
+        alert('Welcome to the events!');
+    };
+
+    document.write('<br>');
+    function directMe(){
+    alert('Congratulations!This will direct you to the website.');
+    };
+
+    document.write('<br>');
+    function directMe(){
+        alert('Thank you for visiting my website.')
+    };
+
+    document.write('<br>');
+    function onLoad(){
+        alert('onload method')
+    };
+
+    document.write('<br>');
+    function onFocus(){
+        alert('Message for you!')
+    };
+
+
+    
+</script>
+<script>
+
+</script>
+    
+</body>
+</html>

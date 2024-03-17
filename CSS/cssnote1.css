@@ -1,0 +1,106 @@
+/*Note*/
+-----
+
+CSS stands for Cascading Style Sheet
+It is used to design Html tags.
+
+It is a style sheet language which is used to describe the look and formatting of a document which is written in markup language.
+
+HTML - content
+CSS - presentation.
+
+
+Syntax:
+----------
+A css rule set contains a selector and a declaration block.
+
+
+selector{declaration block}
+
+selector refers html element.
+declaration block can contain one or more declarations which are separated by a semicolon.
+
+
+declaration block -> property:value;
+
+selector {property1:value1; property2:value2,.....}
+
+property is a type of attribute of html element. It can be color,font,...
+value - It is assigned to css properties.
+eg:
+h1{color:blue;}
+
+in css use style keyword
+style attribute or style tag
+<style>
+</style>
+How to add CSS to html pages?
+
+1. Inline css
+2. Internal or Embedded css
+3. External css.
+
+Inline css
+---------------
+css will be applied on a single line or element.
+eg:
+<h1 style="color:green;">Welcome</h1>
+
+
+<html>
+<head>
+<title>CSS</title>
+
+</head>
+<body>
+<h2 style="color:blue;">Hello</h2>
+<h2>Welcome</h2>
+</body>
+</html>
+
+Internal or Embedded css
+------------------------------------
+It is used to apply css on a single page.
+It will affect all the elements of the page.
+It is written inside the style tag within the head section of html page.
+
+<html>
+<head>
+<title>CSS</title>
+<style>
+h2{color:pink;}
+</style>
+</head>
+<body>
+<h2>Hello</h2>
+<h2>Welcome</h2>
+</body>
+</html>
+
+
+External css
+-------------------
+It is used to apply css on multile pages.
+we write all the css code in a separate file with the file extension as .css
+eg: first.css
+create html file and perform the required information.
+inside head section use
+<link rel="stylesheet" type="text/css" href="first.css">
+
+
+first.css
+------------
+h3{color:red;}
+
+first.html
+------------
+<html>
+<head>
+<title>CSS</title>
+<link rel="stylesheet" type="text/css" href="first.css">
+</head>
+<body>
+<h3>Hello</h3>
+<h2>Welcome</h2>
+</body>
+</html>

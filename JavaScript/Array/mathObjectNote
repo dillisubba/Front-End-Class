@@ -1,0 +1,27 @@
+Math Object
+--------------------
+Math.abs(number) - returns the absolute value of the number
+eg:
+Math.abs(-89) - 89
+
+Math.ceil(number) - number rounded up.
+eg:
+Math.ceil(5.1) - 6
+
+Math.floor(number) - number rounded down
+eg:
+Math.floor(5.1) - 5
+Math.max(numbers) - returns highest number in numbers.
+eg:
+Math.max(23,12) - 23
+Math.max(23,12,56) - 56
+Math.min(numbers) - returns lowest number in numbers.
+eg:
+Math.min(12,23); - 12
+Math.min(1,2,3) - 1
+
+Math.pow(2,3) - 8
+
+Math.round(5.49) - 5
+Math.round(5.51) - 6
+Math.sqrt(81) - 9

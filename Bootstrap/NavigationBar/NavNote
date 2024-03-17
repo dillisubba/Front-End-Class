@@ -1,0 +1,162 @@
+<nav class="nav justify-content-center"><!--center ma nav bar huncha-->
+
+<!--
+    <a opening anchor tag ko href vitra # ko thauma website layo bhane, tyo page ma lancha
+-->
+
+<nav class="nav justify-content-center "><!--vertical nav bar-->
+
+    Bootstrap Nav
+----------------------
+It provides an easy and quick way to create basic navigation.
+
+use .nav class
+
+By default navs are left-aligned.
+we can align to center or right
+
+use class "nav justify-content-center/right"
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nav demo</title>
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+<nav class="nav justify-content-center">
+<a href="#" class="nav-item nav-link">Product</a>
+<a href="#" class="nav-item nav-link">Customer</a>
+<a href="#" class="nav-item nav-link">Orders</a>
+
+
+</nav>
+</div>
+</body>
+</html>
+
+------------------
+we can display nav vertically by using classes
+use .flex-column class for vertical
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nav demo</title>
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+<nav class="nav justify-content-center flex-column">
+<a href="#" class="nav-item nav-link">Product</a>
+<a href="#" class="nav-item nav-link">Customer</a>
+<a href="#" class="nav-item nav-link">Orders</a>
+
+
+</nav>
+</div>
+</body>
+</html>
+-----------------
+basic tabs
+-------------------
+to display tabs use class .nav-tabs
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nav demo</title>
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+<nav class="nav nav-tabs">
+<a href="#" class="nav-item nav-link">Product</a>
+<a href="#" class="nav-item nav-link">Customer</a>
+<a href="#" class="nav-item nav-link">Orders</a>
+
+
+</nav>
+</div>
+</body>
+</html>
+
+---------------
+Pills nav
+----------------
+we can create pills based navigation by using the class .nav-pills.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nav demo</title>
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+<nav class="nav nav-pills">
+<a href="#" class="nav-item nav-link">Product</a>
+<a href="#" class="nav-item nav-link">Customer</a>
+<a href="#" class="nav-item nav-link">Orders</a>
+
+
+</nav>
+</div>
+</body>
+</html>
+
+--------------
+
+Bootstrap nav with drop down menus
+-------------------------------------------------------
+we can add dropdown menus to a link .
+use the classes .dropdown, .dropdown-toggle, .dropdown-menu and .dropdown-item are required along with .nav, .nav-tabs or nav-pills.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nav demo</title>
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+<nav class="nav nav-tabs">
+<a href="#" class="nav-item nav-link">Product</a>
+<div class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+<div class="dropdown-menu">
+<ol>
+<a href="#" class="dropdown-item">Product1</a>
+<a href="#" class="dropdown-item">Product2</a>
+<a href="#" class="dropdown-item">Product3</a>
+</ol>
+</div>
+</div>
+<a href="#" class="nav-item nav-link">Customer</a>
+<a href="#" class="nav-item nav-link">Orders</a>
+
+</nav>
+</div>
+</body>
+</html>
+-----------------------
+

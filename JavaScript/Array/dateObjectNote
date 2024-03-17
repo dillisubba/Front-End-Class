@@ -1,0 +1,60 @@
+Date Object
+--------------------
+It is used to work with date and time.
+It can be used to get year, month day.
+we can use different date constructors to create date object.
+
+Date constructors
+----------------------------
+1. Date()
+2. Date(milliseconds)
+3. Date(dateString)
+4. Date(year,month,day,hours,minutes,seconds,milliseconds)
+
+
+1) new Date() - current date and time
+2) new Date(milliseconds) - milliseconds from 1970 jan 1
+3) new Date(dateString) - creates date object.
+4) new Date(year,month,day,hours,minutes,seconds,millisecond) - creates date based on parameters.
+
+default value is zero.
+eg: month january is zero and december is 11.
+
+Date methods
+---------------------
+getDate() - it returns integer value between 1 and 31.
+getDay() - it returns the integer value between 0 and 6 which represents the day of the week.
+0-sunday 6-saturday
+getFullYear() - it returns the integer value which represents the year.
+getMonth() - it represents the integer value between 0 and 11.
+getHours() - it returns integer value between 0 and 23.
+getMinutes() - it returns integer value between 0 and 59
+getMilliseconds() - it returns integer value between 0 and 999.
+
+
+
+<script>
+var todaysdate=new Date();
+document.write(todaysdate);
+</script>
+
+
+<script>
+var todaysdate=new Date();
+document.write(todaysdate);
+var day=todaysdate.getDate();
+document.write(day);
+var month=todaysdate.getMonth();
+document.write(month);
+var year=todaysdate.getFullYear();
+document.write(year);
+
+var hours=todaysdate.getHours();
+document.write(hours);
+var minutes=todaysdate.getMinutes();
+document.write(minutes);
+var seconds=todaysdate.getSeconds();
+document.write(seconds);
+var milliseconds=todaysdate.getMilliseconds();
+document.write("milliseconds are :"+milliseconds);
+</script>

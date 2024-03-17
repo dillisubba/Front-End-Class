@@ -1,0 +1,66 @@
+Accordion
+---------------
+It is a series of panels stacked on the top of each other.
+
+Accordion menus are widely used in web applications to manage huge amount of data and navigation lists in small amount
+of area.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="accordion" id="firstaccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingthree">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#collapsethree">
+                        HTML
+                    </button>
+                </h3>
+                <div id="collapsethree" class="accordion-collapse collapse" data-bs-parent="firstaccordion">
+                    <div class="card-body">
+                        <p>
+                            HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the
+                            meaning and structure of web content. Other technologies besides HTML are generally used to
+                            describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingthree">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#collapsethree1">
+                        HTML
+                    </button>
+                </h3>
+                <div id="collapsethree1" class="accordion-collapse collapse" data-bs-parent="firstaccordion">
+                    <div class="card-body">
+                        <p>
+                            HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the
+                            meaning and structure of web content. Other technologies besides HTML are generally used to
+                            describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+----------------
