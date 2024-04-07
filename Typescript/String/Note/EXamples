@@ -1,0 +1,47 @@
+String
+------------
+String is an object which represents a sequence of character values.
+String value should be represented using single quotation (' ') or double quotations (" ").
+
+syntax:
+----------
+let varname=new String("string");
+
+
+
+let fname=new String('Srinivas');
+console.log("Name is :"+fname);
+
+
+let lname=new String("Rao");
+console.log("Name is :"+lname);
+
+
+union
+---------
+It is a collection of multiple data types of data in a single type.
+we can combine two or more data types using pipe (|) symbol between types.
+
+syntax:
+---------
+(type1|type2)
+
+let employeeid:number|string;
+employeeid=908761;
+console.log(employeeid);
+employeeid="EASABCEE";
+console.log(employeeid);
+
+
+
+Back-ticks strings
+-----------------------------
+It is used to write expression.
+we can use it to embed the expressions inside the string.
+we can also call it as Template string.
+
+let customername:string="varun";
+let customerdesignation:string="Manager";
+
+let details:string=${customername} has a designation as ${customerdesignation};
+console.log(details);

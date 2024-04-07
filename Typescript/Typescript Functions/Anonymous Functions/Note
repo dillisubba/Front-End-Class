@@ -1,0 +1,47 @@
+Anonymous functions
+----------------------------------
+A function without any name in known as anonymous function.
+These type of functions are dynamically declared at runtime.
+It is defined as an expression.
+we can store it in a variable.
+so it does not require any function name.
+we can invoke it by using variable name which contains a function.
+
+syntax:
+-----------
+let variablename=function(){ }
+
+
+//creating anonymous function
+let result=function()
+{
+console.log("welcome to anonymous functions");
+}
+//calling anonymous function
+result();
+
+//anonymous function with a paramater
+
+let output=function(fname:string)
+{
+console.log("name is "+fname);
+}
+
+output("Srinivas");
+
+//anonymous function with two parameters
+let addresult=function(num1:number, num2:number)
+{
+console.log("total is "+(num1+num2));
+}
+addresult(34,32);
+
+//anonymous function with parameters and with return type.
+
+let addnumbers=function(num1:number, num2:number):number{
+return num1+num2;
+}
+
+console.log("result is "+addnumbers(90,56));
+
+-----------

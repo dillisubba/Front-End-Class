@@ -1,0 +1,33 @@
+Arrow functions
+-------------------------
+It is a short syntax for defining anonymous functions.
+It si also known as lambda function.
+
+syntax:
+-----------
+( with or without parameters) => expression
+
+
+//arrow function without any parameter
+let message=()=>{
+console.log("welcome to arrow functions");
+}
+message();
+
+//arrow function with one parameter
+let display=(fname:string)=>{
+console.log("name is ",fname);
+}
+display("srinivas");
+
+//arrow function with two parameters
+let result=(num1:number,num2:number) => {
+console.log("total is "+(num1+num2));
+}
+result(67,65);
+
+//arrow function with two parameters and with return type.
+let sum=(num1:number, num2:number):number =>{
+return num1+num2;
+}
+console.log(sum(4,5));

@@ -1,0 +1,68 @@
+val() get and set--to get the current vaule of the element
+--------
+val() method is used to get or set the current value of the html form elements.
+
+
+Example1:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>val method</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<p></p>
+<select id="city">//show is a dropdown list
+<option value="hyd">Hyderabad</option>
+<option value="delhi">New Delhi</option>
+<option value="mumbai">Mumbai</option>
+</select>
+
+<script>
+function showcities()//creating function
+{
+$(document).ready(function(){
+var result=$("#city").val();
+$("p").html("Value:"+result);
+});
+}
+
+$("select").change(showcities);
+showcities();//calling function
+
+</script>
+
+</body>
+</html>
+
+--------------------
+EXample2:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>val method</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<form>
+<label>Enter Name :</label>
+<input type="text" id="username" name="username">
+
+<button type="button" class="getname">Get Name</button>
+</form>
+<script>
+$(document).ready(function(){
+$(".getname").click(function(){
+var result=$("#username").val();
+alert(result);
+});
+});
+</script>
+
+</body>
+</html>
+

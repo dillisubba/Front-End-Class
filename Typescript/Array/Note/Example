@@ -1,0 +1,116 @@
+Arrays
+----------
+An array is an homogeneous collection of similar type of elements which have a contiguous memory location.
+
+An array is an user-defined data type.
+we can store similar data type of elements.
+we can store only a fixed set of elements.
+The array is index based storage where the first element is stored at index zero.
+
+Advantages
+------------------
+code optimization
+----------------------------
+Which increases the speed and performance of the program.
+
+
+Disadvantage
+---------------------
+size limit
+An array allows us to store only the fixed number of elements.
+once the array is declared we cannot alter its size.
+If we want to insert more elements than declared , it is not possible.
+
+
+Types of Arrays
+---------------------
+Single dimensional array
+multi dimensional array.
+
+Array declaration
+--------------------------
+using square brackets [ ]
+
+Single dimensional array
+-----------------------------------
+It is atype of linear array which contains only one row for storing data.
+It has a single set of square brackets (" [ ]")
+we can access its elements either using row or column index.
+
+syntax:
+---------
+let arrayname:datatype[ ]=[value1, value2,value3,...]
+
+eg:
+let array1:number[ ]=[10,20,30,40,50];
+console.log(array1[0]);
+console.log(array1[1]);
+console.log(array1[2]);
+console.log(array1[3]);
+console.log(array1[4]);
+
+
+
+Multi dimensional array
+------------------------------------
+It is an array which contains one or more arrays.
+Data is stored in row and column format (matrix format).
+
+syntax:
+------------
+let array_name:datatype[][]=[
+[value1,value2 ],
+[value3,value4 ]
+];
+
+eg:
+let array2:number [ ][ ]=[
+[10,20],
+[30,40]
+];
+
+
+0th column 1st column
+0th row 00 01
+1st row 10 11
+
+10 20
+30 40
+
+
+console.log(array2[0][0]);
+console.log(array2[0][1]);
+console.log(array2[1][0]);
+console.log(array2[1][1]);
+
+
+Array object
+-----------------------
+It allows us to store multiple values in a single variable.
+we can create an array by using Array object.
+The array constructor is used to pass the arguments of array creation.
+
+A numeric value which represents the size of an array
+A list of comma separated values.
+
+syntax:
+------------
+let arrayname : datatype []= new Array(values)
+
+eg:
+let cities :string [] = new Array("Hyderabad", "Delhi","Pune","Chennai");
+for(let i=0;i<cities.length;i++)
+{
+console.log(cities[i]);
+}
+--------------------
+
+for .. in loop
+-------------------
+let cities :string [] = new Array("Hyderabad", "Delhi","Pune","Chennai");
+for(let i in cities)
+{
+console.log(cities[i]);
+}
+-------------------
+

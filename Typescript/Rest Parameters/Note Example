@@ -1,0 +1,32 @@
+Rest parameters
+------------------------
+The rest parameter is used to pass zero or more values to a function.
+we can declare rest parameters by prefixing the three "dot" characters ("...") before the parameter.
+It allows the functions to have different number of arguments without using the arguments object.
+
+Rules
+---------
+Only one rest parameter is allowed in a function.
+It must be an array type.
+It must be the last parameter in the parameters list.
+
+
+syntax:
+----------
+function functionname(parameter1,...parameter2[])
+{
+}
+
+function AddNumbers(num1:number,...num2:number[]):number{
+let result=num1;
+for(let i=0;i<num2.length;i++)
+{
+result+=num2[i];
+}
+return result;
+}
+let output=AddNumbers(1,2,3,4,5);
+console.log(output);
+let output1=AddNumbers(1,2,3,4,5,6,7,8,9,10);
+console.log(output1);
+-------------------------------

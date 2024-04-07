@@ -1,0 +1,78 @@
+Enum
+--------
+(Enumeration)
+
+
+It is a new data type which is supported in Typescript.
+It is used to define a set of named constants.
+Typescript supports both numeric and string values.
+use enum keyword.
+
+enums makes easy to change value in future.
+It reduces errors which are caused by mistyping.
+It exists during compilation time only, so no memory is allocated.
+
+Typescript Enums
+----------------------------
+Numeric Enums
+String Enums
+Heterogenous Enums
+
+
+Numeric Enums
+---------------------------
+These are number based enums which stores values as numbers.
+
+enum Flowers
+{
+Rose,
+Lilly,
+Sunflower,
+Marie Gold
+}
+-----
+enum Flowers
+{
+Rose,
+Lilly,
+Sunflower,
+MarieGold
+}
+console.log(Flowers);
+
+enum Flowers1
+{
+Rose,
+Lilly=11,
+Sunflower,
+MarieGold
+}
+console.log(Flowers1);
+
+
+String enums
+----------------------
+enum Cities
+{
+Bombay="MUM",
+Delhi="DEL",
+Chennai="CHN",
+Hyderabad="HYD"
+}
+console.log(Cities.Delhi);
+console.log(Cities);
+
+
+Heterogenous enums
+-------------------------------
+
+enum Cities1
+{
+Bombay=2,
+Delhi=1,
+Chennai="CHN",
+Hyderabad="HYD"
+}
+console.log(Cities1);
+
+-------------

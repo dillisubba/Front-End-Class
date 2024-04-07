@@ -1,0 +1,76 @@
+jQuery CSS classes manipulation
+---------------------------------------------------
+jQuery provides different methods like addClass(), removeClass(), toggleClass to manipulate css classes assigned to HTML elements.
+
+
+addClass() adds one or more classes to the selected elements.
+
+removeClass() removes classes from the selected elements.
+
+toggleClass() add or removes one or more classes from the selected elements.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>remove demo</title>
+<style>
+.paracss
+{
+color:blue;
+text-transform: uppercase;
+
+}
+.highlightpara
+{
+background-color: yellow;
+}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+$(".btnempty").click(function(){
+$(".mydiv").empty();
+});
+$(".btnremove").click(function(){
+$("#p1").remove();
+});
+$(".btnhref").click(function(){
+$("a").removeAttr("href");
+});
+
+$(".btncss").click(function(){
+$("#p2").addClass("paracss highlightpara");
+
+});
+
+$(".btncssrem").click(function(){
+$("#p2").removeClass("highlightpara");
+});
+$(".btncsstog").click(function(){
+$("#p2").toggleClass("paracss");
+});
+});
+</script>
+</head>
+<body>
+<div class="mydiv">
+<h1>Welcome</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis necessitatibus temporibus quas quibusdam ex odio, voluptates ratione similique animi error laboriosam officia, dolorem pariatur. Iusto voluptates ut veritatis ducimus nemo.</p>
+<button type="button" class="btnempty">empty</button>
+<button type="button" class="btnremove">Remove</button>
+</div>
+<p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis necessitatibus temporibus quas quibusdam ex odio, voluptates ratione similique animi error laboriosam officia, dolorem pariatur. Iusto voluptates ut veritatis ducimus nemo.</p>
+<b>Bold</b>
+<a href="https://www.google.com">Google</a>
+<button type="button" class="btnhref">remove Attribute </button>
+
+<p id="p2">This paragraph is used to implement css.</p>
+<button type="button" class="btncss">Add CSS class</button>
+<button type="button" class="btncssrem">Remove CSS class</button>
+<button type="button" class="btncsstog">Toggle CSS class</button>
+
+</body>
+</html>
+--------------------

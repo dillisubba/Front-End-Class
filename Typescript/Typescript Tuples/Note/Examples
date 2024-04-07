@@ -1,0 +1,26 @@
+Typescript Tuples
+----------------------------
+
+Array holds multiple values of same data type.
+If we need to store a collection of values of different data types in a single variable then array is not sufficient.
+Typescript has a data type called Tuple to perform.
+A Tuple is an array which stores multiple fields which belongs to different types.
+
+syntax:
+-----------
+let tuplename=[value1, value2,...];
+
+eg:
+let studentdata=["10","srinivas","11","Krishna","12","venkat"];
+console.log(studentdata);
+
+let studentdata=["10","srinivas","11","Krishna","12","venkat"];
+console.log(studentdata);
+
+let studentdata1=[10,"srinivas",11,"Krishna",12,"venkat"];
+console.log(studentdata1);
+
+let empdata=[];
+empdata[0]=23;
+empdata[1]="srinivas";
+console.log(empdata);

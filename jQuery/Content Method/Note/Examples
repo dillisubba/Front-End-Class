@@ -1,0 +1,48 @@
+jQuery insert new content
+---------------------------------------
+jQuery provides several methods like append(), prepend(), before(), after(), html(), text().
+
+
+append() method
+--------------------------
+This method is used to insert content at the end of the selected elements.
+
+prepend() method
+-------------------------
+This method is used to insert content to the beginning of the selected elements.
+
+before() method
+--------------------------
+This method is used to insert content before the selected elements.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>append method</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$("#btnadd").click(function(){
+$("#divid").append("This is the text appended");
+$("#divid").prepend("Data added at the beginning of div tag");
+$("h1").before("<h2>This is the data inserted before h1 tag<h2>");
+$("h1").after("<h2>This is the data inserted after h1 tag<h2>");
+});
+});
+</script>
+</head>
+<body>
+<div id="divid">
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusantium quisquam officiis, repudiandae itaque alias, nostrum ipsa optio sit assumenda blanditiis quidem, provident magni soluta excepturi reprehenderit praesentium? Debitis, necessitatibus.</p>
+
+<h1>This is heading 1</h1>
+<p>This is a paragraph</p>
+</div>
+<button type="button" id="btnadd">Insert</button>
+</body>
+</html>
+----------------------
+

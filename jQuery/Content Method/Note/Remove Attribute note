@@ -1,0 +1,78 @@
+jQuery Remove Elements and Attributes
+--------------------------------------------------------------
+jQuery provides method like empty(), remove() to remove the existing html elements or contents from the document.
+
+empty() removes all the child elements and the text content within the selected elements from DOM.
+
+remove() removes the selected elements from DOM.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>remove demo</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+$(".btnempty").click(function(){
+$(".mydiv").empty();
+});
+$(".btnremove").click(function(){
+$("#p1").remove();
+});
+
+});
+</script>
+</head>
+<body>
+<div class="mydiv">
+<h1>Welcome</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis necessitatibus temporibus quas quibusdam ex odio, voluptates ratione similique animi error laboriosam officia, dolorem pariatur. Iusto voluptates ut veritatis ducimus nemo.</p>
+<button type="button" class="btnempty">empty</button>
+<button type="button" class="btnremove">Remove</button>
+</div>
+<p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis necessitatibus temporibus quas quibusdam ex odio, voluptates ratione similique animi error laboriosam officia, dolorem pariatur. Iusto voluptates ut veritatis ducimus nemo.</p>
+<b>Bold</b>
+</body>
+</html>
+-----------------
+
+removeAttr() is used to remove the attribute from the selected element.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>remove demo</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+$(".btnempty").click(function(){
+$(".mydiv").empty();
+});
+$(".btnremove").click(function(){
+$("#p1").remove();
+});
+$(".btnhref").click(function(){
+$("a").removeAttr("href");
+});
+});
+</script>
+</head>
+<body>
+<div class="mydiv">
+<h1>Welcome</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis necessitatibus temporibus quas quibusdam ex odio, voluptates ratione similique animi error laboriosam officia, dolorem pariatur. Iusto voluptates ut veritatis ducimus nemo.</p>
+<button type="button" class="btnempty">empty</button>
+<button type="button" class="btnremove">Remove</button>
+</div>
+<p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis necessitatibus temporibus quas quibusdam ex odio, voluptates ratione similique animi error laboriosam officia, dolorem pariatur. Iusto voluptates ut veritatis ducimus nemo.</p>
+<b>Bold</b>
+<a href="https://www.google.com">Google</a>
+<button type="button" class="btnhref">remove Attribute </button>
+</body>
+</html>
+
+--------------------

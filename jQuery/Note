@@ -1,0 +1,115 @@
+jQuery
+-----------
+jQuery is a javascript library.
+It is cross platform.
+jQuery means "write less do more".
+jQuery simplifies AJAX calls and DOM manipulations.
+It is free and open source.
+
+Benefits
+--------------
+jQuery gives web developers and designers an easy way to create effects with almost no coding.
+It is easy to implement.
+It simplifies HTML document traversing, event handling and AJAX interactions for web development.
+It is used in all over the web.
+
+Software Requirements
+------------------------------------
+jQuery Library
+Notepad or any Editor
+Browser
+
+All the modern browsers supports jQuery.
+
+Features in jQuery
+-------------------------
+jQuery provides selectors to retrieve DOM elements based on different criteria like tagname, id, classname , attributename etc.
+
+Events- jQuery library includes functions which are equivalent to DOM events like click, dblclick, mouseenter, mouseleave, blur, keyup, keydown...
+
+Effects and Animations - We can apply special effects to DOM elements like show or hide, fadein or fadeout, sliding effect, animation ,...
+
+AJAX - jQuery includes AJAX functions to load data from servers without reloading the whole page.
+
+
+Download jQuery
+----------------------------
+Download from www.jquery.com
+include jQuery library.
+
+in system
+use script tag
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+OR,
+use GoogleCDN
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+install jquery
+npm install jquery from terminal
+
+
+jQuery library is a single javascript file containing all the its common DOM, events, effects, Ajax functions.
+
+
+Calling jQuery library functions
+
+jQuery functions will be used as soon as DOM is ready.
+to perform event handling we should call the event inside
+(document).ready()
+
+
+jQuery syntax:
+---------------------
+A jQuery statement starts with dollar sign ($) and ends with a semi colon (;)
+in jQuery dollar sign ($) is just an alias name for jQuery.
+
+<script>
+$(document).ready(function(){
+//write the code to be executed.
+alert("welcome to jquery");
+});
+</script>
+
+eg:
+<script>
+$(document).ready(function(){
+$("p").text("jquery paragraph");
+});
+</script>
+
+<p>Welcome to paragraph</p>
+---------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Example</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="./jquery.js"></script>
+<!-- <script>
+$(document).ready(function(){
+$("p").text("jquery paragraph1.");
+});
+</script> -->
+</head>
+<body>
+<p>Welcome to jquery.</p>
+
+<!-- <script>
+$(document).ready(function(){
+$("p").text("jquery paragraph.");
+});
+</script> -->
+
+</body>
+</html>
+------------
+jquery.js
+------------
+$(document).ready(function(){
+$("p").text("jquery external paragraph.");
+});
+
+-------------------------

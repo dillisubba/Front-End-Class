@@ -1,0 +1,36 @@
+Function Parameter
+--------------------------------
+Function parameters are the values or arguments which are passed to a function.
+In typescript, compiler accepts the same number and type of arguments as defined in the function signature.
+If the compiler does not match the same parameters as in the function signature then it will give the compilation error.
+
+Optional parameter
+
+Default parameter
+
+Rest parameter
+
+Optional parameter
+-----------------------------
+In javascript we can all a function without passing any arguments.
+So in javascript the parameter is optional and when we do this, each parameter value is undefined.
+
+In typescript compiler will throw error if we try to invoke a function without providing the exact number of parameters as declared in its function signature.
+
+To overcome this problem we can use optional parameters by using the question mark sign (?). It means that the parameters which may or may not receive a value can be appended by ? sign to make or mark them as optional.
+
+
+function studentDetails(stdid:number,stdname:string,stdemail?:string)
+{
+console.log("student id is ",stdid);
+console.log("student name is ",stdname);
+-- if(stdemail!=undefined)
+-- {
+-- console.log("student email is ",stdemail);
+-- }
+}
+
+studentDetails(45,"srinivas");//
+studentDetails(45,"srinivas","chsr1207@ymail.com");
+
+----------------

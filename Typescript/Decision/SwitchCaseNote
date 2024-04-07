@@ -1,0 +1,32 @@
+switch case
+-------------------
+It executes one statement from multiple conditions.
+It evaluates expression based on its value which can be number, string, boolean etc.,
+switch statement can have one block of code corresponding to each value.
+when the match is found the corresponding block will be executed.
+
+we can have N number of cases inside switch statement.
+every case statement has a break statement at the end of the block.
+The default statement is optional.
+
+syntax:
+-----------
+switch(expression)
+{
+case expression1:
+//statements;
+break;
+case expression2:
+//statements;
+break;
+case expression3:
+//statements;
+break;
+...
+...
+default: //if all the cases are wrong
+//statements;
+break;
+}
+
+------------------

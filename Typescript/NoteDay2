@@ -1,0 +1,118 @@
+Advantages
+-------------------
+It supports strongly typed, functions, optional parameters.
+It supports object oriented programming like class, object, encapsulation, abstraction, inheritance, polymorphism.
+It is fast , simple and easy to learn.
+It provides error checking feature at compile time.
+It supports all javascript libraries.
+It supports reusability of code.
+
+
+Node.js
+------------
+It is a cross platform runtime environment and library for running javascript applications.
+It is an open source.
+It is used for creating server-side and networking applications.
+
+
+Typescript consists of modules, functions, variables, statements, comments.
+
+
+Differences between javascript and typescript
+---------------------------------------------------------------------
+javascript - doesn't support strongly typed.
+Typescript - supports strongly typed.
+
+JS - extension is ".js"
+TS - extension is ".ts"
+
+JS - directly runs on browser
+TS - It cannot directly run on browser.
+
+JS - It is a scripting language and object based language.
+TS - It is an object oriented programming languae.
+
+
+Disadvantages
+--------------------------
+Typescript takes a long time to compile the code.
+
+Typescript - Type Annotations
+-------------------------------------------------
+Typescript is typed language where we can specify the type of variable, function parameters and object properties.
+Typescript includes all the primitive types of javascript.
+number, string, boolean
+
+syntax:
+------------
+var/let variablename:typeannotation =value;
+eg:
+
+let x : number=45;
+let fname:string="srinivas";
+let result:boolean=true;
+
+
+variable
+---------------
+It is a memory location which has some name and value.
+we can declare variables using var, let and const.
+
+Differences between var ,let and const
+----------------------------------------------------------
+let
+----
+It is used to declare a local variable in typescript.
+It is similar to var keyword but it has some restrictions in scope while comparing with var.
+A variable which is declared with let keyword is limited to block scope only.
+
+eg: let num1:number=56;
+
+var
+------
+It can be declared globally and can be accessed globally.
+
+var num2:number=56;
+const
+--------
+A variable can be declared using const which is similar to var and let.
+The const makes a variable constant where its value cannot be changed.
+const variables have same scope as let variables.
+
+const num3:number=87;
+
+
+
+
+Built in types
+----------------------
+number, string, boolean, void, ..
+
+number - we can store numbers and fractions.
+void - which does not return any value.
+any - It is used where no data type is available. It is the super type of all data types.
+undefined - uninitialized variable.
+null - whose value is undefined.
+
+user defined types
+---------------------------
+class, array, tuple, functions,...
+
+operators
+---------------
+Arithmetic operators (+,-,*,/,%)
+Assignment operators (+=,-=,*=,/=,%=)
+Relational operators (>,<,>=,<=,==,!=)
+Logical operators ( &&, ||, ||!)
+Ternary operator (? : )
+
+----------------------------------
+Arithmetic operators
+----------------------------
+let num1:number=20;
+let num2:number=10;
+console.log("num1 is "+num1);
+console.log("num2 is "+num2);
+console.log("Addition is "+(num1+num2));
+
+-------------------------

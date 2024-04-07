@@ -1,0 +1,66 @@
+Angular
+-----------
+pre-requisites
+----------------------
+Html,css,javascript and typescript.
+
+Typescript--is OOP
+---------------
+It is an open-source object oriented programming language which is developed and maintained by microsoft.
+As of now the latest version of Typescript is 5.4.2
+
+Typescript is strongly typed superset of javascript which compiles to plain javascript.
+
+
+It is a language for designing large scale applications which can be executed on any browser.
+
+Typescript cannot run directly on browser.
+It needs a compiler to compile and generate a javascript file.
+
+It contains all elements of javascript.
+
+It is a language and as a tool.
+
+The source file of typescript is ".ts"
+to compile the program use "tsc" compiler
+typescript code will be converted into javascript code.
+to execute the program use node
+
+softwares
+--------------
+node.js
+visual studio code
+npm
+
+First install node.js
+www.nodejs.org
+
+on vscode terminal or node.js command prompt
+be in the folder and type
+
+npm install typescript@latest
+or
+npm install -g typescript@latest (globally)
+
+eg:
+first.ts
+----------
+let message:string="welcome to typescript";
+
+compile the code on the vscode terminal or node.js command prompt
+be in the folder
+tsc first.ts
+it will convert ".ts" file into ".js" file
+on the terminal
+to execute or run the program
+node first.js
+
+
+project grna
+cd space the path
+
+angular herna
+ng serve 
+ani
+local host ma 
+crtl + double click

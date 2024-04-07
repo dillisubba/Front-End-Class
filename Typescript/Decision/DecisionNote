@@ -1,0 +1,44 @@
+Decision making
+-------------------------
+Decision making in programming is similar to decision making in real life.
+Programmer uses decision making for specifying one or more conditions to be evaluated by program.
+The decision making always returns true or false.
+
+if..else
+----------
+This statement tests the condition. If the condition is true, it executes if block and if the condition is false, it executes the else block.
+
+syntax:
+----------
+if(condition)
+{
+//statements;
+}
+else
+{
+//statements;
+}
+----------------------
+
+if..else .. if ladder
+---------------------------
+
+A user can take decision among multiple options.
+It starts execution in a top down approach. When the condition gets true, it executes the associated statement and the rest of the condition is not executed.
+If it does not find any condition true then it returns the final else statement.
+
+syntax:
+--------------
+if(condition)
+{
+//statements;
+}
+else if(condition)
+{
+//statements;
+}
+else
+{
+//statements;
+}
+--------------------

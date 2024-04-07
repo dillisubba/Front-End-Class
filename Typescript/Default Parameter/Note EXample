@@ -1,0 +1,14 @@
+Default Parameter
+------------------------------
+Typescript provides an option to set default values to the function parameters.
+If the user does not pass a value to an argument, then typescript initializes the default value for the parameter.
+
+function Add(num1:number, num2:number=10)
+{
+console.log("sum of two numbers is "+(num1+num2));
+}
+
+Add(3);
+Add(4,5);
+
+-------------

@@ -1,0 +1,84 @@
+Looping Constructs
+------------------------------
+
+Loop
+--------
+It is a sequence of instructions repeated more than once.
+
+while loop
+do..while loop
+for loop
+
+
+Initialization
+condition
+increment/decrement
+
+
+while loop
+----------------
+It iterates the elements for the infinite number of times.
+It executes the instructions repeatedly until the specified condition evaluates to true.
+It is used when the number of iterations is not known.
+
+syntax:
+-----------
+initialization;
+while(condition)
+{
+//statements;
+increment/decrement;
+}
+
+//Display 1 to 5 numbers.
+
+let num1:number=1; //initialization
+while(num1<=5) //condition
+{
+console.log(num1);
+num1++; //increment
+}
+------------------
+
+do..while loop
+-----------------------
+It iterates the elements for the infinite number of times which is similar to while loop.
+But the difference is that do..while loop gets executed at least once whether the condition is true or false.
+
+syntax:
+----------
+initialization;
+do
+{
+//statements;
+increment/decrement;
+}while(condition);
+
+//Display 10 to 1 numbers.
+
+let num2:number=10; //initialization
+do{
+console.log(num2);//10
+num2--; //decrement
+}while(num2>=1); //condition
+
+----------------
+for loop
+--------------
+We know the number of iterations before the execution of the block of statements.
+It is used to execute a block of code to a specific number of times.
+
+syntax:
+------------
+for(initialization;condition;increment/decrement)
+{
+//statements;
+}
+
+//display 1 to 10 numbers using for loop
+let num3:number;
+for(num3=1;num3<=10;num3++)
+{
+console.log(num3);
+}
+----------------------
