@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdeliver.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTQTwfspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+<link rel="stylesheet" href="stylecss.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+<body>
+    <section class="Login_section d-flex align-items-center justify-content-center">
+        <div class="Login_Box shadow rounded-1">
+            <div class="logo text-center ab-4">
+                <img src="images/logo.png" alt="logo" class="img-fluid">
+                <h1 class="h3 pt-2 met-1">Welcome Back</h1>
+                <p class="small-text">Please enter your details to sign in</p>
+            </div>
+
+            <div class="d-flex justify-content-between mb-4">
+                <div class="google d-flex align-items-center border border-light border-2 w-50 me-2 py-2
+                rounded justify-content-center">
+                    <img src="C:\js.basics\images/google.png" width="25px" alt="google" />
+                    <p class="ms-2">Google</p>
+                </div>
+                <div class="fb d-flex align-items-center border border-light border-2 w-50 ms-2 py-2 rounded
+            justify-content-center">
+                    <img src="C:\js.basics\images/facebook.png" width="25px" alt="fb" />
+                    <p class="ms-2">Facebook</p>
+                </div>
+
+            </div>
+
+            <div class="mb-4 d-flex">
+                <div class="line"></div>
+                <small class="or text-center px-2">Or continue with email</small>
+                <div class="line"></div>
+
+            </div>
+
+            <form class="needs-validation" novalidate>
+                <div class="login-form">
+                    <div class="form-floating mb-4">
+                        <input type="email" class="form-control" id="email" placeholder="youremail@email.com" required/>
+                        <label for="email" class="small-text">Email Address</label>
+                        <div class="invalid-feedback">Please provide a valid email address.</div>
+
+                    </div>
+
+                    <div class="form-floating position-relative">
+                        <input type="password" class="form-control" id="password" placeholder="Password" required/>
+                        <label for="password" class="small-text">Password</label>
+
+                        <i id="eye-icon" class="fa fa-eye position-absolute" aria-hidden="true"></i>
+                        <div class="invalid-feedback">Please provide a valid password.</div>
+
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="text-end small_text link-primary">Forgot your password?</span>
+                </div>
+
+                <button class="btn btn-primary w-100" type="submit">Log in</button>
+
+                <p class="text-center mt-5 small-text">Don't have an account yet?<a href="#">Create an account</a></p>
+
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

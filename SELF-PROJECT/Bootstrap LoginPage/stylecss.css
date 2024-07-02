@@ -1,0 +1,40 @@
+.Login_section{
+    height: 100vh;
+    background: url("C:\js.basics\images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.Login_section .Login_Box {
+    background-color: #ffffff45;
+    width: 28em;
+    padding: 40px 30px;
+}
+
+.Login_Box #eye-icon {
+     top: 18px;
+     right: 18px;
+     font-size: 20px
+}
+
+.Login_Box .small_text {
+     font-size: var(--smallFont);
+}
+
+.Login_Box .form-control:focus{
+    outline: 0;
+    border: 1px solid var(--primaryClrColor);
+    box-shadow: none;
+}
+
+Login_Box .btn:focus{
+    outline:0;
+    box-shadow: none;
+}
+
+.line{
+    height: 1px;
+    width: 31%;
+    background-color: #E0E0E0;
+    margin-top: 10px;
+}

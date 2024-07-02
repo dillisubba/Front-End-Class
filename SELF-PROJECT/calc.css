@@ -1,0 +1,50 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    display:flex;
+    background-color: #08f400dc;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+#keyboardform{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    height: 100%;
+    width: 100px;
+    box-shadow: 3px 3px 5px #f414b5dc;
+    background-color: #f414b5dc;
+    justify-content: center;
+    align-items: center;
+    row-gap:10px;
+    column-gap: 20px;
+}
+
+input[type="button"] {
+    background-color: grey;
+    height:20px;
+    width: 20px;
+    color: #0003f4dc;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #ffa155f1;
+}
+
+#box{
+    border: none;
+    height: 80px;
+    color: darkblue;
+    background-color: #4093ff;
+    font-size: 1.5em;
+    border-radius: 20px;
+}
